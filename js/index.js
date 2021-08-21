@@ -1,28 +1,28 @@
 
-
+// memory calculation function 
 function memory(value){
     const extra_memoryId =document.getElementById('extra_memory');
     extra_memoryId.innerText=value; 
     const totalId =document.getElementById('add');
     totalId.innerText=parseFloat(calculator())
     total()
-    console.log(calculator()); 
+    
 
 }
 
-
+//  storage calculation function 
 function storage(value){
     const extra_storageID =document.getElementById('extra_storage');
    extra_storageID.innerText=value;
    const totalId =document.getElementById('add');
    totalId.innerText=parseFloat(calculator());
    total()
-   console.log(calculator()); 
+  
 
    
 }
 
-
+// delivery calculation function 
 function delivery(value){
     const delivery_chargeID =document.getElementById('delivery_charge');
     delivery_chargeID.innerText=value;
@@ -30,12 +30,12 @@ function delivery(value){
     const totalId =document.getElementById('add');
     totalId.innerText=parseFloat(calculator())
     total()
-    console.log(calculator()); 
+   
   
 }
 
 
-
+// sumation calculation function 
 function calculator (){
     const bestPriceId =document.getElementById('best_price');
     const extraMemoryId =document.getElementById('extra_memory');
