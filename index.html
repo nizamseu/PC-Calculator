@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pc Calculator</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <h1>PC Calculator</h1>
+        <!-- memory section  -->
+        <section id='memory'>
+            <p>memory</p>
+            
+            <button onclick="memory(0)" value="0" >8GB</button>
+            <button onclick="memory(140)" value="140" >16GB</button>
+            
+        </section>
+
+
+            <!-- storage Section  -->
+        <section id="storage">
+            <p>storage</p>
+            <button onclick="storage(0)" value="0">256GB</button>
+            <button onclick="storage(100)" value="100" >512GB</button>
+            <button onclick="storage(180)" value="180" >1TB</button>
+        </section>
+
+        <!-- delivery section  -->
+
+        <section id="delivery">
+            <p>Delivery</p>
+            <button onclick="delivery(0)"  value="0" >free</button>
+            <button onclick="delivery(20)" value="20" >Charge $20</button>
+        </section>
+
+        <!-- calculation  -->
+        <section>
+            <p>Best Price           $<span id="best_price">1299</span></p>
+            <p>Extra Memory cost    $<span id="extra_memory">0</span></p>
+            <p>Extra Storage cost   $<span id='extra_storage'>0</span></p>
+            <p>Delivery Charge      $<span id="delivery_charge">0</span></p>
+            <h3>Total               $<span id="add">1299</span></h3>
+
+        </section>
+    </main>
+   
+
+    <script src="js/index.js"></script>
+</body>
+</html>
