@@ -5,6 +5,7 @@ function memory(value){
     extra_memoryId.innerText=value; 
     const totalId =document.getElementById('add');
     totalId.innerText=parseFloat(calculator())
+    total()
     console.log(calculator()); 
 
 }
@@ -14,7 +15,8 @@ function storage(value){
     const extra_storageID =document.getElementById('extra_storage');
    extra_storageID.innerText=value;
    const totalId =document.getElementById('add');
-   totalId.innerText=parseFloat(calculator())
+   totalId.innerText=parseFloat(calculator());
+   total()
    console.log(calculator()); 
 
    
@@ -27,6 +29,7 @@ function delivery(value){
     
     const totalId =document.getElementById('add');
     totalId.innerText=parseFloat(calculator())
+    total()
     console.log(calculator()); 
   
 }
@@ -49,3 +52,7 @@ function calculator (){
     return subTotal;
 }
 
+function total(){
+   const total= document.getElementById('total');
+   total.innerText=parseFloat(calculator())
+}
