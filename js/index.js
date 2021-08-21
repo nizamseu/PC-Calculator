@@ -52,7 +52,21 @@ function calculator (){
     return subTotal;
 }
 
+// total calculation function 
 function total(){
    const total= document.getElementById('total');
    total.innerText=parseFloat(calculator())
+}
+
+// promo Code apply function 
+
+function promoCode(){
+   const promoInput=document.getElementById('promoInput');
+   const totalId= document.getElementById('total');
+   const totalAmount=parseFloat(totalId.innerText)
+
+   if(promoInput.value=='stevekaku'){
+    totalId.innerText=totalAmount-(totalAmount*.20);
+    promoInput.value=''
+   }
 }
